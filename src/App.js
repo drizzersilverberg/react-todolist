@@ -10,10 +10,10 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
-  root: {
+  rootGrid: {
     flexGrow: 1,
   },
-  demo: {
+  contentGrid: {
     height: 240,
   },
 });
@@ -23,7 +23,7 @@ class App extends Component {
     const {classes} = this.props;
     return (
       <div>
-        <Grid container className={classes.root}>
+        <Grid container className={classes.rootGrid}>
           <Grid item xs={12}>
             <Grid
               container
@@ -31,7 +31,7 @@ class App extends Component {
               alignItems="center"
               direction="row"
               spacing={16}
-              className={classes.demo}
+              className={classes.contentGrid}
             >
               <Grid
                 item
